@@ -37,31 +37,32 @@
 }
 
 .contents {
-	width: 30%;
+	width: 35%;
 }
 
 .box {
-	border: 1px solid #eee;
-	border-top-color: var(--primary-color);
-	border-top-width: .15em;
-	padding: 2em;
-	border-radius: 8px;
-	margin: 20px 0;
-	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+	padding: 1.5em;
+	border-radius: 1em;
 }
 
-.box .title {
-	font-size: 1.3em;
+p.title {
+	font-size: 1em;
 	margin-bottom: 1em;
 }
 
-.box .title::after {
+p.title::after {
 	content: '';
 	width: 30px;
 	background-color: #F47C7C;
 	height: 2px;
 	display: block;
 	margin-top: 2px;
+}
+
+.box .empty-book {
+	font-size: .85em;
+	color: #495057;
+	text-align: center;
 }
 
 .form-group {
@@ -71,10 +72,11 @@
 .form-group label {
 	display: inline-block;
 	margin-bottom: .4rem;
+	font-size: .9em
 }
 
 .form-group .form-text {
-	font-size: .7em;
+	font-size: .6em;
 	color: #495057;
 }
 
@@ -83,7 +85,7 @@
 	width: 100%;
 	height: calc(1.5em + .75rem + 2px);
 	padding: .375rem .75rem;
-	font-size: 1rem;
+	font-size: .8em;
 	font-weight: 400;
 	line-height: 1.5;
 	color: #495057;
@@ -112,7 +114,7 @@
 	user-select: none;
 	border: 1px solid transparent;
 	padding: .375rem .75rem;
-	font-size: 1rem;
+	font-size: .8em;
 	line-height: 1.5;
 	border-radius: .25rem;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -133,8 +135,14 @@
 .book {
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 1px solid var(--third-color);
-	padding: .5em 0;
+	border: 1.5px solid var(--third-color);
+	padding: .5em;
+	margin-bottom: .5em;
+	border-radius: .5em;
+}
+
+.book .__title {
+	font-size: .9em;
 }
 
 .book .__author {
@@ -142,22 +150,22 @@
 }
 
 .book .actions {
-	align-self: end;
+	align-self: center;
 }
 
 .book .actions button {
-	background-color: transparent;
+	background-color: var(--primary-color);
 	padding: .5em;
-	border: 1px solid var(--third-color);
+	border: 1px solid var(--primary-color);
 	border-radius: 1em;
 	cursor: pointer;
 	min-width: 5em;
-	color: #444;
+	color: #fff;
 	font-size: .7em;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .book .actions button:hover {
-	background-color: var(--primary-color);
-	color: #fff;
+	background-color: transparent;
+	color: var(--primary-color);
 }

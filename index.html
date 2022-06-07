@@ -34,39 +34,25 @@
                             <span class="form-text">Contoh: 1997</span>
                         </div>
                         <div class="form-group">
+                            <input type="checkbox" id="isComplete">
+                            <label for="isComplete">Sudah dibaca</label>
+                        </div>
+                        <div class="form-group">
                             <button type="submit" class="btn-simpan">Simpan</button>
                         </div>
                     </form>
                 </div>
                 <div class="box">
+                    <p class="title">Pencarian</p>
+                    <input type="text" class="form-control" id="search-input" placeholder="Cari berdasarkan judul">
+                </div>
+                <div class="box">
                     <p class="title">Belum Selesai Dibaca</p>
-                    <div id="unread-books">
-                        <div class="book">
-                            <div>
-                                <p class="__title">Harry Potter</p>
-                                <p class="__author">J.K. Rowling | 1997</p>
-                            </div>
-                            <div class="actions">
-                                <button type="button">Selesai</button>
-                                <button type="button">Hapus</button>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="unread-books"></div>
                 </div>
                 <div class="box">
                     <p class="title">Sudah Dibaca</p>
-                    <div id="readed-books">
-                        <div class="book">
-                            <div>
-                                <p class="__title">Harry Potter</p>
-                                <p class="__author">J.K. Rowling | 1997</p>
-                            </div>
-                            <div class="actions">
-                                <button type="button">Batal Selesai</button>
-                                <button type="button">Hapus</button>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="readed-books"></div>
                 </div>
             </div>
         </div>
